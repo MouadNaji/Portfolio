@@ -1,7 +1,7 @@
 console.log("sker der dude");
 var menu = document.getElementById("Open-menu");
 var overlay = document.getElementById("overlay");
-let luk = document.getElementById("luk");
+var luk = document.getElementById("luk");
 
 menu.addEventListener("click", menuen);
 luk.addEventListener("click", lukDen)
