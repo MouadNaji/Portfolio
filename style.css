@@ -7,11 +7,23 @@ h1 {
     font-family: 'Boogaloo', cursive;
 }
 
+.hide {
+    display: none;
+}
+
 header {
     padding: 1vw;
     background-color: black;
     height: 5vw;
 
+}
+
+#mig {
+    background-image: url(billeder/mouad.jpg);
+    width: 100vw;
+    height: 75vw;
+    background-size: contain;
+    background-repeat: none;
 }
 
 section {
@@ -217,6 +229,19 @@ li {
     .tekst {
         padding: 2vw 60vw 3vw 3vw;
         text-align: justify;
+    }
+
+    #mig {
+        position: absolute;
+        background-image: url(billeder/mouad.jpg);
+        top: 11vw;
+        left: 50vw;
+        width: 40vw;
+        height: 30vw;
+        background-size: contain;
+        background-repeat: none;
+        z-index: 0;
+
     }
 
 }
