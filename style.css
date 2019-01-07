@@ -7,10 +7,6 @@ h1 {
     font-family: 'Boogaloo', cursive;
 }
 
-.hide {
-    display: none;
-}
-
 header {
     padding: 1vw;
     background-color: black;
@@ -18,7 +14,12 @@ header {
 
 }
 
-#mig {
+.hide {
+    display: none;
+    animation-delay: 3s
+}
+
+#migg {
     background-image: url(billeder/mouad.jpg);
     width: 100vw;
     height: 75vw;
@@ -231,7 +232,7 @@ li {
         text-align: justify;
     }
 
-    #mig {
+    #migg {
         position: absolute;
         background-image: url(billeder/mouad.jpg);
         top: 11vw;

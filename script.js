@@ -2,7 +2,7 @@ console.log("sker der");
 var menu = document.getElementById("Open-menu");
 var overlay = document.getElementById("overlay");
 var luk = document.getElementById("luk");
-var mig = document.getElementById("mig");
+var mig = document.getElementById("migg");
 
 menu.addEventListener("click", menuen);
 luk.addEventListener("click", lukDen)
