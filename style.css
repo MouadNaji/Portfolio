@@ -19,6 +19,11 @@ header {
     animation-delay: 3s
 }
 
+#link {
+    color: black;
+    font-size: 6vw;
+}
+
 #migg {
     background-image: url(billeder/mouad.jpg);
     width: 100vw;
