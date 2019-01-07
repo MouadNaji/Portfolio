@@ -3,6 +3,10 @@ html {
     margin: 0;
 }
 
+h1 {
+    font-family: 'Boogaloo', cursive;
+}
+
 header {
     padding: 1vw;
 
@@ -17,7 +21,7 @@ section {
 section h1 {
     position: relative;
     top: 15vw;
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 1vw auto;
     width: 70vw;
     border-top: 0.5vw solid #934646;
@@ -72,8 +76,12 @@ a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 10vw;
+    font-family: 'Boogaloo', cursive;
+}
 
+p {
+    font-family: 'Libre Baskerville', serif;
 
 }
 
@@ -82,7 +90,7 @@ nav {
     background-color: black;
     padding: 2vw;
     width: 100%;
-    height: 200%;
+    height: 100%;
     top: 0vw;
     display: none;
     transform: scaleX(0);
@@ -99,9 +107,10 @@ ul {
 }
 
 span {
-    color: gray;
+    font-family: 'Libre Baskerville', serif;
+    color: #934646;
     display: block;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 2vw;
 }
 
@@ -113,24 +122,108 @@ li {
 }
 
 #luk {
-    color: white;
+    position: relative;
     width: 100vw;
     cursor: pointer;
     opacity: 0;
     animation: showit 1s 1s forwards ease-in;
-
-}
-
-#luk h1 {
-    position: relative;
+    background-image: url(billeder/luk.svg);
+    background-repeat: no-repeat;
     left: 85vw;
-    font-size: 5vw;
-    margin: 0;
+    top: 2vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .show {
     display: block;
     animation: menu_slide 1s ease-in forwards;
+}
+
+
+
+.Ommig {
+    color: #934646;
+    font-size: 4vw;
+    font-style: italic;
+}
+
+#oversigt {
+    font-size: 9vw;
+    color: #934646;
+    padding: 6vw 0vw 0vw 10vw;
+    margin: 0vw 0vw 0vw 0vw;
+    opacity: 0;
+    animation: showit 1s 1s forwards ease-in;
+}
+
+@media only screen and (min-width: 1200px) {
+    ul {
+        list-style-type: none;
+        margin: 0vw;
+        padding: 0vw;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        width: 100vw;
+    }
+
+    nav {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        top: 0vw;
+        display: none;
+        transform: scaleX(0);
+        transform-origin: right;
+        padding: 1vw 0vw 3vw 2vw;
+        margin: 0vw;
+    }
+
+    a {
+        font-size: 6vw;
+    }
+
+    li {
+        padding: 2vw;
+    }
+
+    #oversigt {
+        font-size: 5vw;
+        padding: 0vw;
+        margin: 0vw;
+    }
+
+    span {
+        font-family: 'Libre Baskerville', serif;
+        color: #934646;
+        display: block;
+        font-size: 1vw;
+        margin-top: 0vw;
+        border-top: 0.1vw solid #934646;
+
+    }
+
+}
+
+/************************Animatioen**************************/
+.pulse {
+    animation-name: pulse;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 @keyframes menu_slide {
@@ -153,36 +246,4 @@ li {
     }
 }
 
-.Ommig {
-    color: #934646;
-    font-size: 4vw;
-    font-style: italic;
-}
-
-#oversigt {
-    font-size: 5vw;
-    color: #934646;
-    padding: 6vw 0vw 0vw 10vw;
-    margin: 1vw 0vw 0vw 0vw;
-    opacity: 0;
-    animation: showit 1s 1s forwards ease-in;
-}
-
-.pulse {
-    animation-name: pulse;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
-}
-
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.1);
-    }
-}
+/************************Animatioen**************************/
