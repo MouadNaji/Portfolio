@@ -14,6 +14,21 @@ header {
 
 }
 
+.te h1 {
+    color: #934646
+}
+
+.te {
+    width: 100vw;
+    padding: 1vw;
+    text-align: inherit;
+}
+
+.tema1 {
+    width: 100vw;
+}
+
+
 
 
 .hide {
@@ -188,6 +203,15 @@ li {
 }
 
 @media only screen and (min-width: 1200px) {
+    .te {
+        width: 50vw;
+        padding: 1vw;
+    }
+
+    .tema1 {
+        width: 50vw;
+    }
+
     ul {
         list-style-type: none;
         margin: 0vw;
