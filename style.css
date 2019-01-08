@@ -18,6 +18,12 @@ header {
     color: #934646
 }
 
+#r {
+    color: #934646;
+    font-size: 10vw;
+    margin: 1vw;
+}
+
 .te {
     width: 100vw;
     padding: 1vw;
@@ -28,7 +34,9 @@ header {
     width: 100vw;
 }
 
-
+#links {
+    margin: 1vw;
+}
 
 
 .hide {
@@ -36,9 +44,10 @@ header {
     animation-delay: 3s
 }
 
-#link {
+.link {
     color: black;
     font-size: 6vw;
+    margin: 1vw;
 }
 
 #migg {
@@ -46,7 +55,6 @@ header {
     width: 100vw;
     height: 75vw;
     background-size: contain;
-    background-repeat: none;
 }
 
 section {
@@ -208,6 +216,12 @@ li {
         padding: 1vw;
     }
 
+    #r {
+        color: #934646;
+        font-size: 4vw;
+        margin: 1vw;
+    }
+
     .tema1 {
         width: 50vw;
     }
@@ -271,17 +285,18 @@ li {
         width: 40vw;
         height: 30vw;
         background-size: contain;
-        background-repeat: none;
         z-index: 0;
 
     }
 
     #links {
-        font-size: 5vw;
+        font-size: 3vw;
+        margin: 1vw;
     }
 
-    #link {
-        font-size: 3vw;
+    .link {
+        font-size: 2vw;
+        margin: 1vw;
     }
 
 }
